@@ -1,0 +1,11 @@
+https://demo.fastadmin.net/admin/auth/adminlog?ref=addtabs
+账号：admin
+密码：123456
+
+安装完成后可以把fastadmin完整版\application\admin下的command文件夹删除，并把fastadmin完整版\public下的install.php文件删除，
+index.php里面的
+if (!is_file(APP_PATH . 'admin/command/Install/install.lock'))      //安装后不需要运行install
+{
+    header("location:./install.php");
+    exit;
+代码删除
